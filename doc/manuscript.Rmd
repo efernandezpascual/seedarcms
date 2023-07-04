@@ -1,0 +1,100 @@
+---
+title: "*SeedArc*, a global archive of primary seed germination data"
+output: 
+  bookdown::word_document2:
+    reference_docx: template.docx
+    number_sections: false
+bibliography: refs.bib
+csl: new-phytologist.csl
+link-citations: yes
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Eduardo Fernández-Pascual^1,a^ (ORCID: https://orcid.org/0000-0002-4743-9577), Angelino Carta^2^ (ORCID: https://orcid.org/0000-0001-8437-818X), Sergey Rosbakh^3^ (ORCID: https://orcid.org/0000-0002-4599-6943), Lydia Guja^4,5^ (ORCID: https://orcid.org/0000-0001-5945-438X), Shyam S Phartyal^6^ (ORCID: https://orcid.org/0000-0003-3266-6619), Fernando AO Silveira^7^ (ORCID: https://orcid.org/0000-0001-9700-7521), Si-Chong Chen^8,9^ (ORCID: https://orcid.org/0000-0002-6855-2595), Julie E Larson^10,b^ (ORCID: https://orcid.org/0000-0001-7968-916X), Borja Jiménez-Alfaro^1^ (ORCID: https://orcid.org/0000-0001-6601-9597)
+
+^1^ IMIB Biodiversity Research Institute (University of Oviedo - CSIC - Principality of Asturias), University of Oviedo, E-33600 Mieres, Spain; ^2^ Department of Biology, Botany Unit, University of Pisa, 56122 Pisa, Italy; ^3^ Department of Plant and Environmental Sciences, University of Copenhagen, DK-1871 Frederiksberg C, Denmark; ^4^ National Seed Bank, Australian National Botanic Gardens, Parks Australia, 2601 Acton, ACT, Australia; ^5^ Centre for Australian National Biodiversity Research, (a joint venture between Parks Australia and CSIRO), CSIRO, 2601 Acton, ACT, Australia; ^6^ School of Ecology and Environment Studies, Nalanda University, 803116 Rajgir, India; ^7^ Department of Genetics, Ecology and Evolution, Federal University of Minas Gerais, 31320290 Belo Horizonte, Brazil; ^8^ Wuhan Botanical Garden, Chinese Academy of Sciences, 430074 Wuhan, China; ^9^ Millennium Seed Bank, Royal Botanic Gardens Kew, RH176TN Wakehurst, UK; ^10^ USDA Agricultural Research Service, Eastern Oregon Agricultural Research Center, 97720 Burns, OR, US
+
+Social media accounts (twitter): \@\_IMIB_; \@BorjaJimAlf; \@SRosbakh; \@SichongChen; \@JulieELarson; \@shyamphartyal; \@UniOviedo; \@UCPH_Research; \@Unipisa; \@ANBG; \@nalanda_univ; \@ufmgbr; \@IntlSeedSciSoc
+
+^a^ Correspondence: Instituto Mixto de Investigación en Biodiversidad, Universidad de Oviedo, Campus de Mieres, Edificio de Investigación, 5ª planta, c/ Gonzalo Gutiérrez Quirós s/n, E-33600 Mieres, Spain. Email: fernandezpeduardo@uniovi.es. Telephone: +34985104781.
+
+^b^ The EOARC is jointly funded by the USDA-ARS and Oregon State Agricultural Experiment Station. USDA-ARS and Oregon State University are equal opportunity providers and employers. Mention of a proprietary product does not constitute a guarantee or warranty of the product by USDA-ARS, Oregon State University, or the authors and does not imply approval to the exclusion of other products. *(Must be included in title page.)*
+
+**Keywords**: data synthesis, database, germination, open science, plant reproduction, repository, seed, trait
+
+# Introduction
+
+Biology is elucidating global patterns and processes at a rapid pace, as international initiatives mobilize an ever-expanding amount of data on the environment [@RN4766; @RN5070], species occurrences [@RN5093], community composition [@RN5103], phylogenomics [@RN5094] and functional traits [@RN4960]. Data synthesis and modern comparative methods [@RN3081] are shedding light on the origin and distribution of present-day biodiversity, including the underlying processes of trait evolution and species adaptation [@RN5082]. In plant science, trait-based macroecology is exploring how species and communities respond to the environment and affect ecosystem functions [@RN4664; @RN4923; @RN5083; @RN4961]. Together with plant height and seed mass, leaf-wood-root traits are helping to describe the global spectrum of plant form and function [@RN3318; @RN5095].
+
+In contrast with the growing understanding of vegetative plant functions, our knowledge of seed-based plant regeneration is less profound, except for the functions of seed mass [@RN2352; @RN2942]. The regeneration phase plays a crucial role in the plant life cycle, with effects on species turnover, community assembly and plant conservation [@RN2934]. The regeneration niche reflects the multifactorial interactions between seeds or seedlings and their environment, including the functions of dispersal, seed persistence, germination and seedling establishment [@RN4691]. Unfortunately, since Grubb’s concept [-@RN2934], little progress has been made in synthesizing data on seed traits [@RN2942; @RN2352]. 
+
+This is especially evident in the case of seed germination traits. Accurately describing the seed germination function requires integrating an ample range of metrics reflecting different drivers of physiological seed germination – from germination proportions, the most available germination trait in TRY [@RN4960], to calculations of speed and synchrony [@RN4752] and more complex models such as hydrothermal germination thresholds [@RN4315]. As a wider range of seed germination metrics and response patterns are synthesized, it will be possible to explore the full spectrum of seed germination strategies that exist among plant populations and species.
+
+# The seed germination spectrum
+
+Seed germination is a physiological process regulated by integrated responses to multiple environmental cues [@RN2384]. Among these cues, the most important are water [@RN4696], temperature [@RN2249], diurnal temperature fluctuations [@RN2217], light [@RN4656] and seed dormancy regulators [@RN3063; @RN3214]. The combination of interactions and trade-offs between responses to environmental germination cues across plant species is what we define as the seed germination spectrum [@RN4655; @RN4965].
+
+Despite extensive research on germination ecology in the last decades, there has been minimal exploration of how the seed germination spectrum integrates with other adult and regeneration trait spectra [@RN4655]. Global-scale studies are needed to clarify the role of regeneration by seeds in shaping plant evolution and the distribution of past and future plant diversity. Theory underlying the seed germination spectrum has been laid out by decades of work on seed ecology [@RN3214], but empirical studies testing major ecological hypotheses at both global and local scales remain elusive without a standardized seed germination database.
+
+# The need for a global archive of primary seed germination data
+
+The seed ecology community has recently recognized the need for synthesizing knowledge, setting the research agenda for functional seed ecology [@RN4655]. These efforts have led to the creation of several tools like biome- or family-specific seed germination databases [@RN4968; @RN5085]; an updated global list of species dormancy types [@RN4743]; or R packages to analyze seed germination data [@RN4752; @RN4969]. In parallel, macroecological studies of seed germination are starting to be more frequent [@RN5088; @RN4965; @RN5072]. Despite these advances, current efforts are biased to specific floras or habitats of mid-latitude temperate biomes, with the major exception of Brazil [@RN5085]. Large amounts of the Earth’s biodiversity remain unexplored by global-scale germination analyses, especially in tropical areas and continents such as Africa or parts of Asia [@RN5086; @RN5087]. 
+
+Archiving seed germination across species and biomes will allow us to overcome major issues limiting our understanding of seed functions, like (1) interspecific variation of germination responses; (2) the heterogeneity of research approaches to measure germination responses; and (3) the need for appropriate statistical methods to model multiple seed responses and different research contexts. Centralizing germination data will also confront new challenges related to the nature of the data: records often track germination proportions in continuous experimental procedures but may also include responses to single and interacting environmental cues that require the application of statistical analyses to derive germination indices as proxy traits [@RN5072].
+
+# *SeedArc*
+
+To advance global understanding of the seed germination spectrum, we are launching *SeedArc*, a global archive of primary seed germination data (**Fig. 1**). *SeedArc* compiles primary seed germination data to synthesize the seed germination spectrum at a global scale. We define primary germination data as the raw information generated under controlled laboratory conditions in a germination experiment conducted with a specific seed lot (i.e. a collection of seeds of a plant species obtained from a geo-referenced population at a specific date) [@RN4965; @RN5072]. Collecting primary germination records as opposed to derived traits, such as germination indices [@RN4315;@RN4752], will allow users to extract more (and more comparable) types of information from each experiment, and conduct broad analyses of the database tailored to specific research questions [@RN4965]. Importantly, the association of primary germination records to unique geo-referenced populations and collection events will allow to model and explore intra-specific variability in seed germination, as well as variability produced by different experimental settings.
+
+*SeedArc* includes both published and unpublished germination data and is a unique repository for collecting and archiving experimental data that are currently in notebooks, scattered in scientific articles in different languages or in technical reports. By submitting to *SeedArc*, contributors will ensure that their efforts will be acknowledged and that seed germination data will be accessible and usable for future studies. In our vision, the ultimate result will be an easily-accessible, interactive, updatable database across a wide range of ecosystems, biomes and plant lineages. In the first round of data mobilization, we focus on primary germination data obtained from seeds collected from wild populations of non-cultivated seed plants. 
+
+The overarching goal of *SeedArc* is to allow comparative studies of seed germination across various levels of biological organization. *SeedArc* adopts the theoretical background of the research agenda for seed‐trait functional ecology [@RN4655], offering a first step towards a global database of seed functional traits, eventually to be linked with other plant trait databases [@RN4960; @RN5103]. *SeedArc* and its associated metadata will allow users to answer questions related to plant regeneration from seeds, evolution, biogeography and vegetation ecology. Moreover, in the light of ongoing habitat degradation and climate emergency, *SeedArc* data will support projects in conservation biology and restoration ecology that rely on the successful germination of seeds [@RN5090].
+
+We envision four critical research questions to address initially from *SeedArc*: 
+
+1. How does the seed germination spectrum integrate with other adult and regeneration trait spectra? Answering this question will allow us to map seed traits to germination functions and to assess how regenerative traits are associated with vegetative traits [@RN3285].
+
+2. How is seed germination regulated by past, current and future environmental conditions? This will broaden our understanding of links between regeneration and spatio-temporal ecological gradients [@RN5091; @RN3055], particularly relevant for understanding potential demographic effects of climate change.
+
+3. What processes drive seed germination variability? Clarification is needed to assess the degree of evolvability versus phenotypic plasticity [@RN2249], which in turn allows us to unveil the macroevolution of seed germination [@RN5072] and the role of germination syndromes in angiosperm diversification [@RN5092; @RN2968].
+
+4. How to tackle the methodological and computational challenges faced by macroecological studies of seed germination? Standardized descriptions of the multiple germination functions (probability, velocity, synchrony) can support global meta-analyses [@RN5072] and summarize the primary germination axes across ecological and evolutionary scales.
+
+# Data mobilization and use
+
+The aim of *SeedArc* is to create the largest repository of seed germination data globally. To ensure a fair protocol of data acquisition and use, we have prepared a set of data management rules accessible at the *SeedArc* website (https://www.unioviedo.es/seedarc). The current version (1.2) was approved by the *SeedArc* coordination team in March 2023. These rules aim at developing a transparent system of data contribution and use along five major points describing (1) the objectives of the database; (2) the coordination team of *SeedArc*, its role and the process to renew it; (3) the nature of the data contributors; (4) the terms of data ownership, data use and co-authorship, highlighting that data contributors retain the ownership of the data and the right to collaborate in *SeedArc* research; and (5) the validity of the rules and the process to update them. In practice, the scientific contribution of *SeedArc* will be generated by research projects. Individual projects using the database will start upon request of one member of the coordination team or the data contributors. The essential workflow of data, projects and publications will be as follows: (1) submitted data (= primary data) remains property of the contributors; (2) primary data is managed by the data coordination team; (3) access and usage of the primary data is done through research projects; (4) each research project must publish, open-access, all data that is used by the project (= secondary data). In other words, all data in *SeedArc* will end up being published open access, once it is used in an actual research publication. The leaders of *SeedArc* projects will need to follow ethical rules of scientific publishing and will be obliged to produce open-science research.
+
+# Conclusions
+
+*SeedArc* enables exploration of macroevolutionary and ecological drivers of seed germination. It captures both optimal and suboptimal germination conditions of species, and accounts for intra-specific variability as a key aspect of phenotypic variability in an evolutionary context [@RN5089; @RN2483]. Research opportunities within the *SeedArc* initiative will be extensive and organized through research projects to address specific questions; any data contributor will be able to propose and lead a project following the procedure outlined in the data-management rules.
+
+We invite the community of plant scientists to join *SeedArc* by contributing data on seed germination from all over the world, regardless of the type of experiment conducted and the number of species tested. We offer data ownership and co-authorship rules that aim to support collaboration and attribution under an open science scheme. By contributing to *SeedArc*, researchers will ensure that their data are preserved and reused. Updated information about *SeedArc* and instructions for contributing data can be found at https://www.unioviedo.es/seedarc.
+
+# Acknowledgements
+
+*SeedArc* is supported by the Spanish Research Agency, project PID2022-139762NA-I00.
+
+# Author contributions
+
+EFP and BJA conceived the idea. EFP, BJA, AC and SR drafted the first version of the data management rules, research goals and structure of the database. All authors revised and approved the data management rules, research goals and structure of the database. EFP led manuscript writing, with contributions from all authors.
+
+# Competing interests
+
+None declared.
+
+# Data availability
+
+The data and code to produce this article is available at https://github.com/efernandezpascual/seedarcms. A version of record of the repository is deposited in Zenodo.
+
+# References
+
+::: {#refs}
+:::
+
+# Figure captions
+
+**Figure 1** *SeedArc* v1.0. The initial version of the *SeedArc* database holds 47,433 primary germination records of 4,516 plant species. (A) The map shows the provenance of the germination records, as purple circles. (B) Whittaker biome plot showing the distribution of the records across the Earth's biomes.
