@@ -36,7 +36,7 @@ The following materials are available in the folders of this repository:
 - `data` Primary data used to create Figure 1.
 - `src` Script in `R` language to create Figure 1.
 - `doc` Files to create the
-  [manuscript](https://github.com/efernandezpascual/seedarcms/doc/manuscript.md)
+  [manuscript](https://github.com/efernandezpascual/seedarcms/blob/master/doc/manuscript.md)
   using `Rmarkdown`.
 
 ## Citation
