@@ -88,7 +88,7 @@ None declared.
 
 # Data availability
 
-The data and code to produce this article is available at https://github.com/efernandezpascual/seedarcms. A version of record of the repository is deposited in Zenodo.
+The data and code to produce this article is available at https://github.com/efernandezpascual/seedarcms. A version of record of the repository is deposited in Zenodo at https://doi.org/10.5281/zenodo.8114443.
 
 # References
 
