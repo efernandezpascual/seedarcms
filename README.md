@@ -1,12 +1,29 @@
 README.md
 ================
 
+![](seedarc.png)
+
 # *SeedArc*, a global archive of primary seed germination data
 
 This repository stores all information related to the publication
 *SeedArc, a global archive of primary seed germination data*, including
 raw data, `R` scripts to process and analyse data, and `Rmarkdown` files
 to create the manuscript.
+
+Seed germination is a key stage in a plant’s life that is controlled by
+numerous environmental conditions, but many data on
+germination-environment relationships remain inaccessible and many plant
+lineages and biomes are underrepresented. Since available information is
+scattered into a multitude of sources and germination metrics, there is
+a need for a unified open-science database to archive and share seed
+germination data. To meet this need and to stimulate continental and
+global eco-evolutionary research, we launch SeedArc, a global archive of
+primary seed germination data (www.unioviedo.es/seedarc/). SeedArc aims
+to mobilize the wealth of seed germination data that has been produced
+by decades of studies on seed ecology and conservation. We expect
+SeedArc to strengthen international collaborative projects in plant
+science, linking the seed research community with other data synthesis
+initiatives.
 
 ## Contents
 
@@ -19,7 +36,7 @@ The following materials are available in the folders of this repository:
 - `data` Primary data used to create Figure 1.
 - `src` Script in `R` language to create Figure 1.
 - `doc` Files to create the
-  [manuscript](https://github.com/efernandezpascual/seedarcms/blob/master/doc/manuscript.md)
+  [manuscript](https://github.com/efernandezpascual/seedarcms/doc/manuscript.md)
   using `Rmarkdown`.
 
 ## Citation
