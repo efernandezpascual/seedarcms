@@ -44,5 +44,7 @@ The following materials are available in the folders of this repository:
 Please cite this repository as:
 
 > Fernández-Pascual E, Carta A, Rosbakh S, Guja L, Phartyal SS, Silveira
-> FAO, Chen S, Larson JE, Jiménez-Alfaro B (2023) SeedArc, a global
-> archive of primary seed germination data. *New Phytologist*.
+> FAO, Chen S, Larson JE, Jiménez-Alfaro B (2023) [SeedArc, a global
+> archive of primary seed germination
+> data.](https://doi.org/10.1111/nph.19143) *New Phytologist* 240,
+> 466-470.
